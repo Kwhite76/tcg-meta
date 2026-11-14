@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TCG meta reports</title><style>
+:root { --ink:#172033; --muted:#64748b; --line:#d7dee8; --panel:#f8fafc; --gain:#0f766e; --loss:#be123c; }
+body { margin:0; font:14px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:#fff; }
+main { max-width:1280px; margin:0 auto; padding:30px 24px 48px; }
+h1 { margin:0 0 8px; font-size:30px; } h2 { margin:30px 0 8px; font-size:20px; } h3 { margin:22px 0 8px; font-size:16px; }
+.dek, .note { color:var(--muted); } .dek { max-width:980px; margin:0 0 18px; } .note { font-size:12px; margin-top:12px; }
+nav { display:flex; flex-wrap:wrap; gap:6px 16px; margin:0 0 18px; padding-bottom:10px; border-bottom:1px solid var(--line); }
+nav a.here { color:var(--ink); text-decoration:underline; }
+.meta, .cards { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:22px 0 24px; }
+.metric, .explain { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:13px 14px; }
+.metric b { display:block; font-size:22px; margin-bottom:2px; } .metric span, .explain span { color:var(--muted); font-size:12px; }
+.explain b { display:block; margin-bottom:4px; }
+.band { border:1px solid var(--line); border-radius:8px; padding:14px; margin-top:12px; overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th, td { border-bottom:1px solid var(--line); padding:8px 7px; text-align:right; white-space:nowrap; vertical-align:top; }
+th:first-child, td:first-child, td.txt, th.txt { text-align:left; white-space:normal; }
+th { color:var(--muted); font-size:12px; background:var(--panel); }
+.gain { color:var(--gain); font-weight:700; } .loss { color:var(--loss); font-weight:700; }
+a { color:#155e75; font-weight:700; text-decoration:none; }
+.why { margin:0 0 12px; } .why small { color:var(--muted); display:block; }
+.warn { background:#fff7ed; border:1px solid #fed7aa; border-radius:8px; padding:10px 14px; margin:12px 0; }
+details { margin-top:6px; } summary { cursor:pointer; margin-top:30px; } summary h2 { display:inline; margin:0; }
+td.buy a { display:inline-block; margin-right:12px; padding:4px 0; }
+svg.trend { vertical-align:middle; } svg.trend polyline { fill:none; stroke-width:1.5; } .u { stroke:#7c3aed; fill:#7c3aed; } .p { stroke:#ca8a04; fill:#ca8a04; } polyline.u, polyline.p { fill:none; }
+.stale { background:#fef2f2; border:1px solid #fecaca; border-radius:8px; padding:10px 14px; margin:12px 0; }
+footer.note { overflow-wrap:anywhere; }
+@media (max-width:800px) { main{padding:22px 14px 34px;} .meta,.cards{grid-template-columns:repeat(2,minmax(0,1fr));} h1{font-size:24px;} }
+@media (max-width:480px) { .meta,.cards{grid-template-columns:1fr;} }
+</style></head><body><main>
+<h1>TCG meta reports</h1>
+<p class="dek">Cards moving or in demand for play in each game, refreshed daily. Tap a game for the full report.</p>
+<details open><summary><h2><a href="pokemon/index.html">Pokémon</a></h2></summary>
+
+<p class="note">Report 2026-11-14. Decklists: <a href="https://play.limitlesstcg.com" rel="noopener noreferrer">Limitless Play API</a>.</p>
+<div class="band"><table><thead><tr><th>In demand</th><th>Set</th><th>#</th><th>Usage change</th><th>Market</th></tr></thead><tbody><tr><td class="txt">Talonflame ex</td><td>DLR</td><td>88</td><td class="gain">+21.6 pp</td><td>$4.92</td></tr><tr><td class="txt">Mega Kangaskhan ex</td><td>MEG</td><td>104</td><td class="gain">+16.6 pp</td><td>$2.11</td></tr><tr><td class="txt">Latias ex</td><td>SSP</td><td>76</td><td class="gain">+13.9 pp</td><td>$7.19</td></tr><tr><td class="txt">Switch</td><td>MEG</td><td>130</td><td class="gain">+13.2 pp</td><td>$0.15</td></tr><tr><td class="txt">Legendary Pyroduct</td><td>DLR</td><td>94</td><td class="gain">+12.6 pp</td><td>$0.85</td></tr></tbody></table></div>
+</details>
+<details open><summary><h2><a href="one-piece/index.html">One Piece</a></h2></summary>
+
+<p class="note">Report 2026-11-14. Decklists: <a href="https://play.limitlesstcg.com" rel="noopener noreferrer">Limitless Play API</a>.</p>
+<div class="band"><table><thead><tr><th>In demand</th><th>Set</th><th>#</th><th>Usage change</th><th>Market</th></tr></thead><tbody><tr><td class="txt">Trafalgar Law</td><td>OP13</td><td>OP13-031</td><td class="gain">+16.2 pp</td><td>$1.84</td></tr><tr><td class="txt">Fullalead</td><td>OP09</td><td>OP09-099</td><td class="gain">+14.7 pp</td><td>$0.11</td></tr><tr><td class="txt">Vander Decken IX</td><td>OP06</td><td>OP06-033</td><td class="gain">+14.7 pp</td><td>$5.25</td></tr><tr><td class="txt">Shanks</td><td>OP17</td><td>OP17-022</td><td class="gain">+13.7 pp</td><td>$3.65</td></tr><tr><td class="txt">Nami</td><td>OP14</td><td>OP14-031</td><td class="gain">+12.6 pp</td><td>$9.50</td></tr></tbody></table></div>
+</details>
+<details open><summary><h2><a href="riftbound/index.html">Riftbound</a></h2></summary>
+
+<p class="note">Report 2026-11-14. <a href="https://topdeck.gg" rel="noopener noreferrer">Data provided by TopDeck.gg</a>.</p>
+<div class="band"><table><thead><tr><th>In demand</th><th>Set</th><th>#</th><th>Usage change</th><th>Market</th></tr></thead><tbody><tr><td class="txt">Stellacorn Herder</td><td>SFD</td><td>048</td><td class="gain">+9.6 pp</td><td>$1.22</td></tr><tr><td class="txt">Reckless Innovator</td><td>RAD</td><td>105</td><td class="gain">+8.7 pp</td><td>$0.21</td></tr><tr><td class="txt">Rakelstake</td><td>RAD</td><td>165</td><td class="gain">+8.0 pp</td><td>$0.12</td></tr><tr><td class="txt">Kai&#39;Sa, Survivor</td><td>OGN</td><td>039</td><td class="gain">+7.5 pp</td><td>$69.50</td></tr><tr><td class="txt">Kai&#39;Sa, Daughter of the Void</td><td>OGN</td><td>247</td><td class="gain">+7.3 pp</td><td>$0.38</td></tr></tbody></table></div></details>
+<footer class="note">Prices: <a href="https://tcgcsv.com" rel="noopener noreferrer">TCGCSV</a> (TCGPlayer data).</footer>
+</main></body></html>
